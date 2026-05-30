@@ -1,0 +1,23 @@
+{
+  "name": "@servora/database",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "mongoose": "^8.5.0",
+    "ioredis": "^5.4.0"
+  },
+  "devDependencies": {
+    "@servora/config-eslint": "workspace:*",
+    "@servora/config-typescript": "workspace:*",
+    "@servora/shared-utils": "workspace:*",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}

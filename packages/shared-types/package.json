@@ -1,0 +1,17 @@
+{
+  "name": "@servora/shared-types",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "lint": "eslint src/"
+  },
+  "devDependencies": {
+    "@servora/config-eslint": "workspace:*",
+    "@servora/config-typescript": "workspace:*",
+    "typescript": "^5.5.0"
+  }
+}
