@@ -48,7 +48,7 @@ const bookingSchema = new Schema<IBookingDocument>(
   }
 );
 
-// Geospatial index on bok
+// Geospatial index on bk
 bookingSchema.index({ location: "2dsphere" });
 
 export const Booking = mongoose.model<IBookingDocument>("Booking", bookingSchema);
